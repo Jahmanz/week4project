@@ -1,41 +1,42 @@
 //business logic
-function Pizza(size, sauce, toppings) {
-  this.size =toppings;
-  this.sauces = sauces;
-  this.veggieToppings = veggietoppings;
-  this.meatToppings = meattoppings;
+function Pizza(size, sauce, veggies, meat) {
+  this.sizeName = size;
+  this.sauceName = sauce;
+  this.veggieName = veggies;
+  this.meatName = meat;
 }
 
 Pizza.prototype.fullpizza = function() {
-  return "Size" + this.size + " " + "Sauce:" + this.sauce + " " +  "Veggie Topping:" + this.veggietoppings + " " + "Meat Topping" + this.meatToppings;
+  return "Size:" + " " + this.sizeName + " " + "Sauce:" + " " + this.sauceName + " " + "Veggie Topping:" + " " + this.veggieName + " " + "Meat Topping" + " " + this.meatName;
 }
 
 // user interface logic
 $(document).ready(function() {
-  $("form#new-places").submit(function(event) {
+  $("form#new-pizza").submit(function(event) {
     event.preventDefault();
 
-    var inputtedSize = $("input#size").val();
-    var inputtedSuace = $("input#sauce").val();
-    var inputtedYear = $("input#new-year").val();
-    var inputtedActivity = $("input#new-activity").val();
+    var inputtedSize = $("#new-size").val();
+    var inputtedSauce = $("#new-sauce").val();
+    var inputtedVeggies = $("#new-veggies").val();
+    var inputtedMeat = $("#new-meat").val();
 
-    var newPlace = new Places(inputtedCity, inputtedCountry, inputtedYear, inputtedActivity);
+    var newPizza = new Pizza(inputtedSize, inputtedSauce, inputtedVeggies, inputtedMeat);
 
-    $("ul#visits").prepend("<li><span class='visits'>"+ newPlace.fullPlaces() + "</span></li>");
+    $("ul#pizza").prepend("<li><span class='pizza'>"+ newPizza.fullpizza() + "</span></li>");
 
-    $(".visits").last().click(function() {
-      $("#show-places").show();
-      $("#show-places h2").prepend(newPlace.cityName);
-      $(".city").prepend(newPlace.cityName);
-      $(".country").prepend(newPlace.countryName);
-      $(".year").prepend(newPlace.whatYear);
-      $(".activity").prepend(newPlace.whatActivities);
+    $(".pizza").last().click(function() {
+
+      $("#show-pizza").show();
+      $("#show-pizza h2").prepend(newPizza.sizeName);
+      $(".size").prepend(newPizza.sizeName);
+      $(".sauce").prepend(newPizza.sauceName);
+      $(".veggies").prepend(newPizza.veggieName);
+      $(".meat").prepend(newPizza.meatName);
     });
 
-    $("input#new-city").val("");
-    $("input#new-country").val("");
-    $("input#new-year").val("");
-    $("input#new-activity").val("");
+    $("#new-size").val();
+    $("#new-sauce").val();
+    $("#new-veggies").val();
+    $("#new-meat").val();
   });
 });

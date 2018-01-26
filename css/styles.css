@@ -1,13 +1,13 @@
 
-#show-places {
+#show-pizza {
   display: none;
 }
 
-.visits {
+.pizza {
   cursor: pointer;
   color: #0088cc;
 }
 
-.visits:hover {
+.pizza:hover {
   text-decoration: underline;
 }
