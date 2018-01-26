@@ -5,7 +5,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>My Vacations</title>
+    <title>JR's Pizza Pot</title>
   </head>
   <body>
     <div class="container">
@@ -14,17 +14,18 @@
    </div>
    <div class="row">
          <div class="jahborder"><div class="col-md-12">
-     <p>Ready for some great pizza!  JR's is the best in Seattle!  Get started by ordering your pizza below.</p>
+     <h2>Ready for some great pizza!  JR's is the best in Seattle!  Get started by ordering your pizza below.</h2>
 
    </div>
 
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <h2>Select your pizza: </h2>
           <form id="new-pizza">
             <div class="form-group">
-              <label for="new-size">Size</label>
+              <label for="new-size"><h2>Size</h2></label>
               <select class="form-control" id="new-size">
+              <option></option>
               <option value = "$8 Personal Pizza">Personal</option>
               <option value = "#10 Small Pizza">Small</option>
               <option value = "$12 Medium Pizza">Medium</option>
@@ -32,8 +33,9 @@
             </select>
           </div>
             <div class="form-group">
-              <label for="new-sauce">Sauce</label>
+              <label for="new-sauce"><h2>Sauce</h2></label>
               <select class="form-control" id="new-sauce">
+              <option></option>
               <option value = "pesto">Pesto</option>
               <option value = "alfredo">alfredo</option>
               <option value = "traditional">Traditional</option>
@@ -41,8 +43,9 @@
             </select>
           </div>
             <div class="form-group">
-              <label for="new-veggies">Veggies</label>
+              <label for="new-veggies"><h2>Veggies</h2></label>
               <select class="form-control" id="new-veggies">
+              <option></option>
               <option value = "onions">Onions</option>
               <option value = "olives">Olvies</option>
               <option value = "tomatoes">tomatoes</option>
@@ -51,15 +54,16 @@
             </select>
           </div>
             <div class="form-group">
-              <label for="new-meat">Meat</label>
+              <label for="new-meat"><h2>Meat</h2></label>
               <select class="form-control" id="new-meat">
+              <option></option>
               <option value = "pepperoni">pepperoni</option>
               <option value = "sausage">sausage</option>
               <option value = "chicken">chicken</option>
               <option value = "salami">salami</option>
             </select>
           </div>
-              <button type="submit" class="btn">Add</button>
+              <button type="submit" class="btn">Checkout</button>
             </div>
           </form>
 
@@ -71,12 +75,12 @@
         </div>
         <div class="col-md-6">
           <div id="show-pizza">
-            <h2></h2>
+            <h3></h3>
 
 
-            <p>Sauce: <span class="sauce"></span></p>
-            <p>Veggies: <span class="veggies"></span> </p>
-            <p>Meat: <span class="meat"></span></p>
+            <h2>Sauce: <span class="sauce"></span></h2>
+            <h2>Veggies: <span class="veggies"></span> </h2>
+            <h2>Meat: <span class="meat"></span></h2>
         </div>
       </div>
     </div>

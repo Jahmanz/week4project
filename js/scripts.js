@@ -32,8 +32,7 @@ $(document).ready(function() {
       alert("Your order has been confirmed!")
 
       $("#show-pizza").show();
-      $("#show-pizza h2").prepend(newPizza.sizeName);
-      // $(".size").prepend(newPizza.sizeName);
+      $("#show-pizza h3").prepend("Your Order:" + " " + newPizza.sizeName);
       $(".sauce").prepend(newPizza.sauceName);
       $(".veggies").prepend(newPizza.veggieName);
       $(".meat").prepend(newPizza.meatName);

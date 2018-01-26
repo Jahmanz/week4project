@@ -11,3 +11,16 @@
 .pizza:hover {
   text-decoration: underline;
 }
+
+.jumbotron {
+  background-color: #b0b255;
+}
+
+body {
+  background-image: url("https://st.depositphotos.com/3470617/4920/v/950/depositphotos_49203389-stock-illustration-pizza-background.jpg");
+}
+
+h2 {
+  font-size: large;
+  font-weight: bold;
+}
