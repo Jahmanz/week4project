@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>JR's Pizza Pot</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <center><h1>JR's Pizza Pot</h1></center>
+    </div>
+    <div class="row">
+          <div class="jahborder"><div class="col-md-12">
+      <p>THE BEST PIZZA IN SEATTLE!</p>
+
+    </div>
+      <p>Customize your pizza below:</p>
+
+    <form id="formPizza">
+
+        <div class="form-group">
+          <label for="size">Size</label>
+          <select class="form-control" id="size">
+            <option></option>
+            <option value = "personal">personal</option>
+            <option value = "small">small</option>
+            <option value = "medium">medium</option>
+            <option value = "large">large</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="sauce">Sauce</label>
+          <select class="form-control" id="sauce">
+            <option></option>
+            <option value = "pesto">pesto</option>
+            <option value = "alfredo">alfredo</option>
+            <option value = "traditional">traditional</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="sauce">Veggie Toppings #1</label>
+          <select class="form-control" id="toppings1">
+            <option></option>
+            <option value = "onions">onions</option>
+            <option value = "olives">olives</option>
+            <option value = "mushrooms">mushrooms</option>
+            <option value = "tomatoes">tomatoes</option>
+            <option value = "bellpepper">bellpepper</option>
+          </select>
+        </div>
+          <div class="form-group">
+            <label for="sauce">Veggie Toppings #2</label>
+            <select class="form-control" id="toppings2">
+              <option></option>
+              <option value = "onions">onions</option>
+              <option value = "olives">olives</option>
+              <option value = "mushrooms">mushrooms</option>
+              <option value = "tomatoes">tomatoes</option>
+              <option value = "bellpepper">bellpepper</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="sauce">Meat Toppings</label>
+            <select class="form-control" id="meat toppings">
+              <option></option>
+              <option value = "pepperoni">pepperoni</option>
+              <option value = "sausage">sausage</option>
+              <option value = "chicken">chicken</option>
+              <option value = "salami">salami</option>
+            </select>
+          </div>
+          <button type="submit" class="btn" id="order">Confirm your order</button>
+
+        </form>
+
+
+        <h2>Your Pizza</h2>
+        <ul id="visits">
+
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <div id="show-places">
+          <h2></h2>
+
+          <p>City: <span class="city"></span></p>
+          <p>Country: <span class="country"></span></p>
+          <p>Year: <span class="year"></span></p>
+          <p>Activity: <span class="activity"></span></p>
+        </div>
+      </div>
+
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
+
+
+      <!-- <ul>
+        <div class = "toppings">
+          <li><input type="checkbox" id="pepperoni" value="pepperoni">
+          <label for="pepperoni">pepperoni</label></li>
+          <li><input type="checkbox" id="sausage" value="sausage">
+          <label for="sasuage">sausage</label></li>
+          <li><input type="checkbox" id="onions" value="onions">
+          <label for="onions">onions</label></li>
+          <li><input type="checkbox" id="olives" value="olives">
+          <label for="">olives</label></li>
+          <li><input type="checkbox" id="mushrooms" value="mushrooms">
+          <label for="mushrooms">mushrooms</label></li>
+          <li><input type="checkbox" id="bellpepper" value="bellpepper">
+          <label for="bellpepper">bell pepper</label></li>
+          <li><input type="checkbox" id="chicken" value="chicken">
+          <label for="chicken">chicken</label></li>
+          <li><input type="checkbox" id="tomato" value="tomato">
+          <label for="tomato">tomato</label></li>
+        </ul>
