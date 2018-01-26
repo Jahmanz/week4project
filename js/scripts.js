@@ -7,7 +7,9 @@ function Pizza(size, sauce, veggies, meat) {
 }
 
 Pizza.prototype.fullpizza = function() {
-  return "Size:" + " " + this.sizeName + " " + "Sauce:" + " " + this.sauceName + " " + "Veggie Topping:" + " " + this.veggieName + " " + "Meat Topping" + " " + this.meatName;
+  return "SIZE - " + "   " + this.sizeName + " | " + "SAUCE - " + " " + this.sauceName + " | " + "VEGGIES - " + " " + this.veggieName + " | " + "MEAT - " + " " + this.meatName;
+
+
 }
 
 // user interface logic
@@ -22,13 +24,16 @@ $(document).ready(function() {
 
     var newPizza = new Pizza(inputtedSize, inputtedSauce, inputtedVeggies, inputtedMeat);
 
-    $("ul#pizza").prepend("<li><span class='pizza'>"+ newPizza.fullpizza() + "</span></li>");
+
+
+    $("ul#pizza").prepend("click to confirm your order" + "<li><span class='pizza'>"+ newPizza.fullpizza() + "</span></li>");
 
     $(".pizza").last().click(function() {
+      alert("Your order has been confirmed!")
 
       $("#show-pizza").show();
       $("#show-pizza h2").prepend(newPizza.sizeName);
-      $(".size").prepend(newPizza.sizeName);
+      // $(".size").prepend(newPizza.sizeName);
       $(".sauce").prepend(newPizza.sauceName);
       $(".veggies").prepend(newPizza.veggieName);
       $(".meat").prepend(newPizza.meatName);

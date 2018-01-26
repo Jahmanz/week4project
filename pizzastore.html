@@ -9,7 +9,14 @@
   </head>
   <body>
     <div class="container">
-      <h1>Pizza</h1>
+      <div class="jumbotron">
+       <center><h1>JR's PIZZA POT</h1></center>
+   </div>
+   <div class="row">
+         <div class="jahborder"><div class="col-md-12">
+     <p>Ready for some great pizza!  JR's is the best in Seattle!  Get started by ordering your pizza below.</p>
+
+   </div>
 
       <div class="row">
         <div class="col-md-6">
@@ -18,11 +25,12 @@
             <div class="form-group">
               <label for="new-size">Size</label>
               <select class="form-control" id="new-size">
-              <option value = "personal">Personal</option>
-              <option value = "small">Small</option>
-              <option value = "medium">Medium</option>
-              <option value = "large">Large</option>
+              <option value = "$8 Personal Pizza">Personal</option>
+              <option value = "#10 Small Pizza">Small</option>
+              <option value = "$12 Medium Pizza">Medium</option>
+              <option value = "$14 Large Pizza">Large</option>
             </select>
+          </div>
             <div class="form-group">
               <label for="new-sauce">Sauce</label>
               <select class="form-control" id="new-sauce">
@@ -31,6 +39,7 @@
               <option value = "traditional">Traditional</option>
               <option value = "BBQ">BBQ</option>
             </select>
+          </div>
             <div class="form-group">
               <label for="new-veggies">Veggies</label>
               <select class="form-control" id="new-veggies">
@@ -40,6 +49,7 @@
               <option value = "mushrooms">mushrooms</option>
               <option value = "bellpeppers">bellpeppers</option>
             </select>
+          </div>
             <div class="form-group">
               <label for="new-meat">Meat</label>
               <select class="form-control" id="new-meat">
@@ -48,12 +58,13 @@
               <option value = "chicken">chicken</option>
               <option value = "salami">salami</option>
             </select>
-
-
-            <button type="submit" class="btn">Add</button>
+          </div>
+              <button type="submit" class="btn">Add</button>
+            </div>
           </form>
 
-          <h2>Visits</h2>
+
+          <!-- <h2>Your Pizza</h2> -->
           <ul id="pizza">
 
           </ul>
@@ -62,13 +73,12 @@
           <div id="show-pizza">
             <h2></h2>
 
-            <p>Size: <span class="size"></span></p>
+
             <p>Sauce: <span class="sauce"></span></p>
-            <p>Veggies: <span class="veggies"></span></p>
+            <p>Veggies: <span class="veggies"></span> </p>
             <p>Meat: <span class="meat"></span></p>
-          </div>
         </div>
-  </div>
+      </div>
     </div>
   </body>
 </html>
